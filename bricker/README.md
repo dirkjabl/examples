@@ -14,4 +14,4 @@ You need the bricker api code.
 If nothing other is declared, you can build the examples with the typical go
 command inside of the example directory.
 
-    go buld
+    go build
