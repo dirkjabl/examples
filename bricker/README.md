@@ -1,7 +1,7 @@
 bricker
 =======
 
-Here are examples for the (bricker)[www.github.com/dirkjabl/bricker] code.
+Here are examples for the [bricker](www.github.com/dirkjabl/bricker) code.
 
 This examples works without any warrenty. This are only examples.
 
