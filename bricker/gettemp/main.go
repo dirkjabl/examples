@@ -28,6 +28,7 @@ func main() {
 		"address of the brickd, default is localhost:4223")
 	var uid = flag.Int("uid", 42362,
 		"UId of the Temperature Bricklet, here exists no useful default")
+	flag.Parse()
 
 	// Create a bricker object
 	brick := bricker.New()
