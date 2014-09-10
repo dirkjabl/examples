@@ -1,8 +1,18 @@
+// Copyright 2014 Dirk Jablonowski. All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+
 /*
 This is a example to get the actual temperature from the Temperature Bricklet
 and print it on the command line.
 This is a very simple example.
 It should only show the basic structure of a implementation with the bricker api.
+
+To run this example, you should have a Temperature Bricklet and a connection to it
+(USB, Ethernet, WLAN) with a running brickd.
+This example does not test, if the bricklet exists.
+When no bricklet exists it waits forever.
+
 You need the bricker api code.
   go get github.com/dirkjabl/bricker
 */
@@ -22,6 +32,7 @@ func main() {
 		"address of the brickd, default is localhost:4223")
 	var uid = flag.Int("uid", 42362,
 		"UId of the Temperature Bricklet, here exists no useful default")
+	flag.Parse()
 
 	// Create a bricker object
 	brick := bricker.New()
