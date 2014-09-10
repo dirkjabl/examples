@@ -9,8 +9,10 @@ The weatherstation kit has normally following hardware:
 * Barometer Bricklet
 * Humidity Bricklet
 * Ambient Light Bricklet
+* [Temperature Bricklet optional]
 
-The temperature is readout from the Barometer Bricklet.
+The temperature is readout from the Barometer Bricklet,
+if no Temperature Bricklet is connected.
 
 The application prints out all messages on the LCD Bricklet.
 The lines have following informations:
@@ -22,3 +24,7 @@ The lines have following informations:
 The buttons toggle the LCD Backlight.
 After startup the application turn on the backlight of the LCD bricklet.
 
+    weatherstation [-addr=<connection>] [-console=<true/false>]
+
+      addr: adress of the bricker stack, defaults to localhost:4223.
+      console: boolean flag for print the output to the console too, default is false.
